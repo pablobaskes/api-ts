@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import handleHttp from "../utils/error.handler";
+import { handleHttp } from "../utils/error.handler";
 import {
   deleteAllCars,
   deleteCarById,

@@ -7,9 +7,8 @@ import {
   postItem,
   updateItem,
 } from "../controllers/item.controller";
-import { checkjwt } from "../middlewares/session.middleware";
 const router = Router();
-router.get("/", checkjwt, getItems);
+router.get("/", getItems);
 router.get("/:id", getItem);
 router.post("/", postItem);
 router.put("/:id", updateItem);
