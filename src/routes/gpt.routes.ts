@@ -1,5 +1,6 @@
 import { Router } from "express";
-import { handleChat } from "../controllers/gpt.controller";
+import { handleAISearch, handleChat } from "../controllers/gpt.controller";
 const router = Router();
 router.post("/", handleChat);
+router.post("/search", handleAISearch);
 export { router };
